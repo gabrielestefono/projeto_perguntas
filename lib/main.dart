@@ -31,9 +31,9 @@ class _PerguntaAppState extends State<PerguntaApp> {
             Questao(
               perguntas[_perguntaSelecionada],
             ),
-            Resposta("Resposta 01"),
-            Resposta("Resposta 02"),
-            Resposta("Resposta 03"),
+            Resposta("Resposta 01", _responder),
+            Resposta("Resposta 02", _responder),
+            Resposta("Resposta 03", _responder),
           ],
         ),
       ),
