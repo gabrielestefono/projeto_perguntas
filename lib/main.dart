@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import "./resultado.dart";
 import './questionario.dart';
 
-main() => runApp(PerguntaApp());
+// 1 - Main roda app "PerguntaApp"
+main() => runApp(const PerguntaApp());
 
 class _PerguntaAppState extends State<PerguntaApp> {
   var _perguntaSelecionada = 0;
@@ -10,28 +11,28 @@ class _PerguntaAppState extends State<PerguntaApp> {
     {
       "texto": "Qual é a sua cor favorita?",
       "respostas": [
-        {"texto": "Verde", "nota": 10},
-        {"texto": "Vermelho", "nota": 5},
-        {"texto": "Azul", "nota": 3},
-        {"texto": "Preto", "nota": 1},
+        {"texto": "Verde", "pontuacao": 10},
+        {"texto": "Vermelho", "pontuacao": 5},
+        {"texto": "Azul", "pontuacao": 3},
+        {"texto": "Preto", "pontuacao": 1},
       ],
     },
     {
       "texto": "Qual é o seu animal favorito?",
       "respostas": [
-        {"texto": "Coelho", "nota": 10},
-        {"texto": "Cobra", "nota": 5},
-        {"texto": "Elefante", "nota": 3},
-        {"texto": "Leão", "nota": 1},
+        {"texto": "Coelho", "pontuacao": 10},
+        {"texto": "Cobra", "pontuacao": 5},
+        {"texto": "Elefante", "pontuacao": 3},
+        {"texto": "Leão", "pontuacao": 1},
       ],
     },
     {
       "texto": "Qual é o seu professor favorito?",
       "respostas": [
-        {"texto": "Gabriel", "nota": 10},
-        {"texto": "Maria", "nota": 5},
-        {"texto": "Leo", "nota": 3},
-        {"texto": "João", "nota": 1},
+        {"texto": "Gabriel", "pontuacao": 10},
+        {"texto": "Maria", "pontuacao": 5},
+        {"texto": "Leo", "pontuacao": 3},
+        {"texto": "João", "pontuacao": 1},
       ],
     }
   ];
@@ -70,7 +71,9 @@ class _PerguntaAppState extends State<PerguntaApp> {
   }
 }
 
+// 2 - O App perguntaApp se extende de Widget com estado
 class PerguntaApp extends StatefulWidget {
+  // Definindo contrutor
   const PerguntaApp({super.key});
   @override
   _PerguntaAppState createState() {
